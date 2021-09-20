@@ -9,7 +9,7 @@ export default class FormularioRoutes{
         routes.get('/formulario', controller.index);
         routes.get('/formulario/:uid', controller.show);
         routes.post('/formulario', controller.store);
-        routes.delete('/formulario:uid', controller.delete);
+        routes.delete('/formulario/:uid', controller.delete);
         
         return routes;
     }
